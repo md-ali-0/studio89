@@ -167,7 +167,7 @@ const Page = () => {
                     </h1>
                     <p className="text-sm text-gray-500 mt-4">
                         Ready to book your studio time or have questions? Reach
-                        out to us at +8801717303783 or visit us at 2/2, Pollobi,
+                        out to us at +8801711605618 or visit us at 2/2, Pollobi,
                         Mirpur 11.5, Dhaka (beside Setara Convention Hall). We
                         look forward to working with you!
                     </p>
@@ -185,7 +185,7 @@ const Page = () => {
                                     className="dark:text-gray-300 text-sm ml-4"
                                 >
                                     <small className="block">Phone</small>
-                                    <strong>+8801717303783</strong>
+                                    <strong>+8801711605618</strong>
                                 </a>
                             </li>
                         </ul>

@@ -69,10 +69,10 @@ const Footer = () => {
                             </div>
                             <div className="ml-[18px]">
                                 <Link
-                                    href="tel:+8801717303783"
+                                    href="tel:+8801711605618"
                                     className="font-Inter text-[14px] font-medium text-white"
                                 >
-                                    +8801717 303783
+                                    +8801711605618
                                 </Link>
                                 <p className="font-Inter text-[12px] font-medium text-white">
                                     Support Number

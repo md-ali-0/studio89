@@ -213,7 +213,7 @@ const Page = () => {
                     <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
                     <p className="text-sm leading-relaxed">
                         If you have any questions or concerns about these Terms
-                        and Conditions, please contact us at +8801717303783
+                        and Conditions, please contact us at +8801711605618
                     </p>
                 </div>
             </div>
