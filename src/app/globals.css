@@ -86,7 +86,7 @@
 
 .scene {
     width: 280px;
-    height: 200px;
+    height: 220px;
     perspective: 1000px;
     position: relative;
 }
@@ -104,5 +104,6 @@
     width: 280px;
     left: 10px;
     height: 220px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    cursor: pointer;
 }

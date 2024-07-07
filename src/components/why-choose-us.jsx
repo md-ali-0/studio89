@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
     return (
         <div className="mx-auto max-w-6xl px-4 md:px-0">
             <ul className="grid grid-cols-1 gap-6 text-center md:grid-cols-3">
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <SiProtools className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium">
                         State-of-the-Art Equipment
@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
                         ensure your content is of the highest quality.
                     </p>
                 </li>
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <GiFlexibleStar className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium">
                         Flexible Rental Options
@@ -28,7 +28,7 @@ const WhyChooseUs = () => {
                         schedule and budget.
                     </p>
                 </li>
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <RiAedLine className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium">Extra Facilities</h3>
                     <p className="mt-1.5 text-sm leading-6 text-secondary-500">
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
                         makeup room and changing room facilities.
                     </p>
                 </li>
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <MdSupportAgent className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium group-hover:text-primary-500">
                         Expert Support
@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
                         you achieve your creative goals.
                     </p>
                 </li>
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <RiApps2Line className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium group-hover:text-primary-500">
                         Creative Environment
@@ -58,7 +58,7 @@ const WhyChooseUs = () => {
                         inspiring atmosphere where ideas can flourish.
                     </p>
                 </li>
-                <li className="rounded-xl border px-6 py-8 shadow-sm">
+                <li className="rounded-xl border px-6 py-8 shadow-sm hover:shadow-md hover:dark:bg-slate-900 cursor-pointer select-none">
                     <RiXrpFill className="mx-auto" size={30} />
                     <h3 className="my-3 font-medium group-hover:text-primary-500">
                         Use Anywhere
