@@ -11,7 +11,7 @@ const ServiceCards = () => {
     return (
         <section className="relative z-10 overflow-hidden bg-white pb-5 pt-8 dark:bg-[#020817]">
             <div className="container mx-auto">
-                <div className="-mx-4 flex flex-wrap">
+                <div className="flex flex-wrap">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] max-w-[510px] text-center">
                             <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark dark:text-white sm:text-4xl md:text-[40px]">
@@ -27,7 +27,7 @@ const ServiceCards = () => {
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                     <div className="group">
-                        <div className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/live-stream'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={liveStreamIcon}
                                 alt="category image"
@@ -37,10 +37,10 @@ const ServiceCards = () => {
                             <h3 className="text-gray-900 dark:text-gray-300 text-lg py-1 font-semibold">
                                 {"Live Stream"}
                             </h3>
-                        </div>
+                        </Link>
                     </div>
                     <div className="group ">
-                        <div className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/podcast'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={podCastIcon}
                                 alt="category image"
@@ -49,10 +49,10 @@ const ServiceCards = () => {
                             <h3 className="text-gray-900 dark:text-gray-300 text-lg py-1 font-semibold">
                                 {"PodCast"}
                             </h3>
-                        </div>
+                        </Link>
                     </div>
                     <div className="group">
-                        <div className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/video-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={videoContentIcon}
                                 alt="category image"
@@ -61,10 +61,10 @@ const ServiceCards = () => {
                             <h3 className="text-gray-900 dark:text-gray-300 text-lg py-1 font-semibold">
                                 {"Video Content"}
                             </h3>
-                        </div>
+                        </Link>
                     </div>
                     <div className="group ">
-                        <div className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/social-media-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={socialMediaIcon}
                                 alt="category image"
@@ -73,11 +73,11 @@ const ServiceCards = () => {
                             <h3 className="text-gray-900 dark:text-gray-300 text-lg py-1 font-semibold">
                                 {"Social Media Content"}
                             </h3>
-                        </div>
+                        </Link>
                     </div>
                     <div className="group ">
                         <Link
-                            href={"/self-growth"}
+                            href={"/edTech-classroom"}
                             className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300"
                         >
                             <Image
@@ -91,7 +91,7 @@ const ServiceCards = () => {
                         </Link>
                     </div>
                     <div className="group ">
-                        <div className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/photo-shoot'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={photoShootIcon}
                                 alt="category image"
@@ -100,7 +100,7 @@ const ServiceCards = () => {
                             <h3 className="text-gray-900 dark:text-gray-300 text-lg py-1 font-semibold">
                                 {"Photo Shoot"}
                             </h3>
-                        </div>
+                        </Link>
                     </div>
                 </div>
             </div>

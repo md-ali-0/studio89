@@ -16,7 +16,7 @@ const PricingCard = ({
                     <span className="mb-3 block text-lg font-semibold text-primary">
                         {type}
                     </span>
-                    <h2 className="mb-5 text-[42px] font-bold text-black dark:text-white">
+                    <h2 className="mb-5 text-4xl font-bold text-black dark:text-white">
                         {price}
                         <span className="text-base font-medium text-slate-500 dark:text-slate-800">
                             / {subscription}
