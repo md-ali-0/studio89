@@ -67,18 +67,34 @@ const Navbar = () => {
                             </button>
 
                             <ul className="lg:flex lg:gap-x-4 max-lg:space-y-3 max-lg:fixed max-lg:bg-white dark:bg-[#020817] max-lg:w-2/3 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-4 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
-                                <li className="max-lg:border-b max-lg:pb-4 px-3 lg:hidden">
-                                    <a href="#">
-                                        <Image
-                                            src={logo}
-                                            alt="logo"
-                                            className="w-36"
-                                            width={114}
-                                            height={50}
-                                        />
-                                    </a>
+                                <li
+                                    className="max-lg:border-b max-lg:pb-4 px-3 lg:hidden"
+                                    onClick={() => setIsOpen(false)}
+                                >
+                                    <Link href="/">
+                                        {theme == "light" ? (
+                                            <Image
+                                                src={logo}
+                                                alt="logo"
+                                                className="w-28 sm:w-36"
+                                                width={114}
+                                                height={20}
+                                            />
+                                        ) : (
+                                            <Image
+                                                src={logoDark}
+                                                alt="logo"
+                                                className="w-28 sm:w-36"
+                                                width={114}
+                                                height={20}
+                                            />
+                                        )}
+                                    </Link>
                                 </li>
-                                <li className="max-lg:border-b max-lg:py-3 px-3">
+                                <li
+                                    className="max-lg:border-b max-lg:py-3 px-3"
+                                    onClick={() => setIsOpen(false)}
+                                >
                                     <Link
                                         href="/"
                                         className={
@@ -91,10 +107,7 @@ const Navbar = () => {
                                     </Link>
                                 </li>
                                 <li className="group max-lg:border-b max-lg:py-3 px-3 relative">
-                                    <Link
-                                        href="#"
-                                        className={"navlink"}
-                                    >
+                                    <Link href="#" className={"navlink"}>
                                         Services
                                     </Link>
                                     <ul className="absolute shadow-lg  bg-white dark:bg-gray-950 space-y-3 lg:top-10 max-lg:top-14 -left-6 min-w-[230px] z-10 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-2 group-active:opacity-100 group-active:max-h-[700px] group-hover:border group-active:pb-4 group-active:pt-2 transition-all duration-500 rounded-md ">
@@ -102,6 +115,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/live-stream"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 Live Stream
                                             </Link>
@@ -110,6 +124,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/podcast"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 PodCast
                                             </Link>
@@ -118,6 +133,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/video-content"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 Video Content
                                             </Link>
@@ -126,6 +142,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/social-media-content"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 Social Media Content
                                             </Link>
@@ -134,6 +151,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/edTech-classroom"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 EdTech Classroom
                                             </Link>
@@ -142,6 +160,7 @@ const Navbar = () => {
                                             <Link
                                                 href={"/photo-shoot"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
                                             >
                                                 Photo Shoot
                                             </Link>
@@ -156,6 +175,7 @@ const Navbar = () => {
                                                 ? "active"
                                                 : "navlink"
                                         }
+                                        onClick={() => setIsOpen(false)}
                                     >
                                         Package
                                     </Link>
@@ -168,6 +188,7 @@ const Navbar = () => {
                                                 ? "active"
                                                 : "navlink"
                                         }
+                                        onClick={() => setIsOpen(false)}
                                     >
                                         About
                                     </Link>
@@ -177,7 +198,7 @@ const Navbar = () => {
 
                         <div className="flex gap-2">
                             <ThemeSwitcher />
-                            <Button>Get Started</Button>
+                            <Button className="hidden sm:block">Get Started</Button>
                             <button
                                 className="block md:hidden"
                                 onClick={() => setIsOpen(!isOpen)}

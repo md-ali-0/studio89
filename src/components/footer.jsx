@@ -33,21 +33,21 @@ const Footer = () => {
                                 target="_blank"
                                 href="https://www.facebook.com/profile.php?id=61557020607639"
                             >
-                                <FaFacebook />
+                                <FaFacebook className="text-white" />
                             </Link>
                             <Link
                                 className="hover:scale-110"
                                 target="_blank"
                                 href="https://www.instagram.com/studio89bd"
                             >
-                                <FaInstagram />
+                                <FaInstagram className="text-white" />
                             </Link>
                             <Link
                                 className="hover:scale-110"
                                 target="_blank"
                                 href="https://www.youtube.com/@Studio89bd"
                             >
-                                <FaYoutube />
+                                <FaYoutube className="text-white" />
                             </Link>
                         </div>
                     </div>
@@ -96,10 +96,10 @@ const Footer = () => {
                             </div>
                             <div className="ml-[18px]">
                                 <a
-                                    href="mailto:help@lorem.com"
+                                    href="mailto:info@studio89bd.com"
                                     className="font-Inter text-[14px] font-medium text-[#fff]"
                                 >
-                                    help@lorem.com
+                                    info@studio89bd.com
                                 </a>
                                 <p className="font-Inter text-[12px] font-medium text-[#fff]">
                                     Support Email
@@ -123,7 +123,7 @@ const Footer = () => {
                             </div>
                             <div className="ml-[18px]">
                                 <span className="font-Inter text-[14px] font-medium text-[#fff]">
-                                    2/2, Pollobi, Mirpur 11.5, Dhaka
+                                    2/2, Pallobi, Mirpur 11.5, Dhaka
                                 </span>
                                 <p className="font-Inter text-[12px] font-medium text-white">
                                     Address
