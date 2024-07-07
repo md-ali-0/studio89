@@ -43,14 +43,13 @@ const CommonSlider = ({children}) => {
             },
         ]
     );
-
     return (
         <div className="lg:m-3.5 m-1.5">
             <Container>
                 <>
                     <div
                         ref={sliderRef}
-                        className="keen-slider rounded-xl h-[490px]"
+                        className="keen-slider rounded-xl h-[250px] md:h-[490px]"
                     >
                         {children}
                     </div>
