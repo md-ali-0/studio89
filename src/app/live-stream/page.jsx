@@ -17,21 +17,16 @@ const page = () => {
     return (
         <div>
             <CommonSlider>
-                {ImageData.map((item,idx)=><div
-                    key={idx}
-                    style={{
-                        backgroundImage: `url('${item.image.src}')`,
-                    }}
-                    className="keen-slider__slide bg-cover bg-no-repeat bg-center flex items-center justify-center text-white"
-                >
-                    <div className="bg-[rgba(255, 255, 255, 1)] flex flex-col justify-end backdrop-blur-[8px] rounded-3xl min-w-[80%] md:min-w-[380px] lg:min-w-[580px]">
-                        <div className="px-5 py-10 lg:px-14 lg:py-20">
-                            <h2 className="text-2xl font-bold mb-2">
-                                Live Stream
-                            </h2>
-                        </div>
+                {ImageData.map((item, idx) => (
+                    <div
+                        key={idx}
+                        style={{
+                            backgroundImage: `url('${item.image.src}')`,
+                        }}
+                        className="keen-slider__slide bg-cover bg-no-repeat bg-center"
+                    >
                     </div>
-                </div>)}
+                ))}
             </CommonSlider>
             <div>
                 <SectionTitle
