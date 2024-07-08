@@ -27,7 +27,7 @@ const ServiceCards = () => {
                 </div>
                 <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6">
                     <div className="group">
-                        <Link href={'/live-stream'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/service/live-stream'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={liveStreamIcon}
                                 alt="category image"
@@ -40,7 +40,7 @@ const ServiceCards = () => {
                         </Link>
                     </div>
                     <div className="group ">
-                        <Link href={'/podcast'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/service/podcast'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={podCastIcon}
                                 alt="category image"
@@ -52,7 +52,7 @@ const ServiceCards = () => {
                         </Link>
                     </div>
                     <div className="group">
-                        <Link href={'/video-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/service/video-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={videoContentIcon}
                                 alt="category image"
@@ -64,7 +64,7 @@ const ServiceCards = () => {
                         </Link>
                     </div>
                     <div className="group ">
-                        <Link href={'/social-media-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/service/social-media-content'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={socialMediaIcon}
                                 alt="category image"
@@ -77,7 +77,7 @@ const ServiceCards = () => {
                     </div>
                     <div className="group ">
                         <Link
-                            href={"/edTech-classroom"}
+                            href={"/service/edTech-classroom"}
                             className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300"
                         >
                             <Image
@@ -91,7 +91,7 @@ const ServiceCards = () => {
                         </Link>
                     </div>
                     <div className="group ">
-                        <Link href={'/photo-shoot'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
+                        <Link href={'/service/photo-shoot'} className="h-[200px]  shadow-lg border rounded-lg p-2 flex   items-center flex-col justify-center text-center dark:group-hover:bg-slate-900 duration-300">
                             <Image
                                 src={photoShootIcon}
                                 alt="category image"
