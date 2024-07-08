@@ -56,31 +56,44 @@ const PackageSlider = () => {
                 <div className="keen-slider" ref={sliderRef}>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Live Streaming"
-                            price="10,000/- BDT"
-                            description="A hard alloy of copper and tin, often used in sculptures and tools."
-                            buttonText="Choose Live Streaming"
-                            link="/packages/live-stream"
+                            type="Live Stream"
+                            price="2,500/- BDT"
+                            description="Ideal for regular content creators who need more flexibility"
+                            buttonText="Choose Live Stream"
                         >
-                            <List>4 hours of studio time</List>
-                            <List>Two persons podcast season</List>
+                            <List>1 hours of studio time</List>
                             <List>
                                 Access to high-quality video and audio recording
                                 equipment
                             </List>
-                            <List>High-quality lighting setup</List>
+                            <List>Professional lighting setup</List>
                             <List>On-site technical support</List>
                         </PricingCard>
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
                             type="Content Creator"
-                            price="4,500/- BDT"
-                            description="A hard alloy of copper and tin, often used in sculptures and tools."
+                            price="2,000/- BDT"
+                            description="Ideal for regular content creators who need more flexibility"
                             buttonText="Choose Content Creator"
-                            link="/packages/content-creator"
                         >
-                            <List>2 hours of studio time</List>
+                            <List>1 hours of studio time</List>
+                            <List>
+                                Access to high-quality video and audio recording
+                                equipment
+                            </List>
+                            <List>Professional lighting setup</List>
+                            <List>On-site technical support</List>
+                        </PricingCard>
+                    </div>
+                    <div className="keen-slider__slide">
+                        <PricingCard
+                            type="Podcast"
+                            price="2,500/- BDT"
+                            description="Perfect for beginners and small projects."
+                            buttonText="Choose Podcast"
+                        >
+                            <List>1 hours of studio time</List>
                             <List>Two persons podcast season</List>
                             <List>
                                 Access to high-quality video and audio recording
@@ -108,27 +121,6 @@ const PackageSlider = () => {
                                 Technical support for live streaming or
                                 recording classes
                             </List>
-                        </PricingCard>
-                    </div>
-                    <div className="keen-slider__slide">
-                        <PricingCard
-                            type="Podcast Package"
-                            price="10,000/- BDT"
-                            description="For professionals requiring high-quality production facilities."
-                            buttonText="Choose Podcast"
-                            link="/packages/podcast"
-                        >
-                            <List>3 hours of studio time</List>
-                            <List>Two persons podcast season</List>
-                            <List>
-                                Access to premium audio and video equipment
-                            </List>
-                            <List>
-                                Advanced lighting and green screen options
-                            </List>
-                            <List>On-site technical support</List>
-                            <List>Basic post-production assistance</List>
-                            <List>Access to editing suite</List>
                         </PricingCard>
                     </div>
                 </div>

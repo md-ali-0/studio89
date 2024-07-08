@@ -16,10 +16,7 @@ function CalendarDatePicker() {
                         {" "}
                         Schedule every meeting faster
                     </h2>
-                    <p className="text-xl my-6">
-                        If you want to success follow shedule in life
-                    </p>
-                    <Button> Follow Schedule</Button>
+                    <Button> Schedule Now</Button>
                 </div>
                 <Calendar
                     mode="single"
