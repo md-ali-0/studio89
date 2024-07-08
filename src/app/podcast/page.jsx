@@ -1,8 +1,8 @@
 import bannerBd1 from "@/assets/banners/podcast/1.jpg";
 import bannerBd2 from "@/assets/banners/podcast/2.jpg";
 import bannerBd3 from "@/assets/banners/podcast/3.jpg";
-import bannerBd4 from "@/assets/banners/podcast/4.jpg";
-import bannerBd5 from "@/assets/banners/podcast/5.jpg";
+// import bannerBd4 from "@/assets/banners/podcast/4.jpg";
+// import bannerBd5 from "@/assets/banners/podcast/5.jpg";
 import CommonSlider from "@/components/common-slider";
 import EquipmentCard from "@/components/equipment-card";
 import SectionTitle from "@/components/section-title";
@@ -13,8 +13,8 @@ const page = () => {
         { image: bannerBd1 },
         { image: bannerBd2 },
         { image: bannerBd3 },
-        { image: bannerBd4 },
-        { image: bannerBd5 },
+        // { image: bannerBd4 },
+        // { image: bannerBd5 },
     ];
     return (
         <div>

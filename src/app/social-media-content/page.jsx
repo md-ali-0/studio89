@@ -1,8 +1,8 @@
 import bannerBd1 from "@/assets/banners/social-media-content/1.jpg";
 import bannerBd2 from "@/assets/banners/social-media-content/2.jpg";
 import bannerBd3 from "@/assets/banners/social-media-content/3.jpg";
-import bannerBd4 from "@/assets/banners/social-media-content/4.jpg";
-import bannerBd5 from "@/assets/banners/social-media-content/5.jpg";
+// import bannerBd4 from "@/assets/banners/social-media-content/4.jpg";
+// import bannerBd5 from "@/assets/banners/social-media-content/5.jpg";
 import CommonSlider from "@/components/common-slider";
 import EquipmentCard from "@/components/equipment-card";
 import SectionTitle from "@/components/section-title";
@@ -13,8 +13,8 @@ const page = () => {
         { image: bannerBd1 },
         { image: bannerBd2 },
         { image: bannerBd3 },
-        { image: bannerBd4 },
-        { image: bannerBd5 },
+        // { image: bannerBd4 },
+        // { image: bannerBd5 },
     ];
     return (
         <div>

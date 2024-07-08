@@ -1,7 +1,7 @@
 import bannerBd1 from "@/assets/banners/live-streaming/1.jpg";
 import bannerBd2 from "@/assets/banners/live-streaming/2.jpg";
 import bannerBd3 from "@/assets/banners/live-streaming/3.jpg";
-import bannerBd4 from "@/assets/banners/live-streaming/4.jpg";
+// import bannerBd4 from "@/assets/banners/live-streaming/4.jpg";
 import CommonSlider from "@/components/common-slider";
 import EquipmentCard from "@/components/equipment-card";
 import SectionTitle from "@/components/section-title";
@@ -12,7 +12,7 @@ const page = () => {
         { image: bannerBd1 },
         { image: bannerBd2 },
         { image: bannerBd3 },
-        { image: bannerBd4 },
+        // { image: bannerBd4 },
     ];
     return (
         <div>
