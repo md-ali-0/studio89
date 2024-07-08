@@ -18,7 +18,7 @@ const Navbar = () => {
     const pathname = usePathname();
     console.log(pathname);
     return (
-        <header className="bg-white dark:bg-[#020817] dark:border-b shadow py-4 px-4 sm:px-10 font-sans min-h-[75px]">
+        <header className="border-b shadow py-4 px-4 sm:px-10 font-sans min-h-[75px]">
             <Container>
                 <div className="flex    tracking-wide relative z-50">
                     <div className="flex flex-wrap items-center justify-between gap-4 w-full">
@@ -113,7 +113,7 @@ const Navbar = () => {
                                     <ul className="absolute shadow-lg  bg-white dark:bg-gray-950 space-y-3 lg:top-10 max-lg:top-14 -left-6 min-w-[230px] z-10 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-2 group-active:opacity-100 group-active:max-h-[700px] group-hover:border group-active:pb-4 group-active:pt-2 transition-all duration-500 rounded-md ">
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/live-stream"}
+                                                href={"/service/live-stream"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -122,7 +122,7 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/podcast"}
+                                                href={"/service/podcast"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -131,7 +131,7 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/video-content"}
+                                                href={"/service/video-content"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -140,7 +140,7 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/social-media-content"}
+                                                href={"/service/social-media-content"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -149,7 +149,7 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/edTech-classroom"}
+                                                href={"/service/edTech-classroom"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -158,7 +158,7 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/photo-shoot"}
+                                                href={"/service/photo-shoot"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
@@ -167,18 +167,48 @@ const Navbar = () => {
                                         </li>
                                     </ul>
                                 </li>
-                                <li className="max-lg:border-b max-lg:py-3 px-3">
-                                    <Link
-                                        href="/packages"
-                                        className={
-                                            pathname === "/packages"
-                                                ? "active"
-                                                : "navlink"
-                                        }
-                                        onClick={() => setIsOpen(false)}
-                                    >
-                                        Package
+                                <li className="group max-lg:border-b max-lg:py-3 px-3 relative">
+                                    <Link href="#" className={"navlink"}>
+                                    Packages
                                     </Link>
+                                    <ul className="absolute shadow-lg  bg-white dark:bg-gray-950 space-y-3 lg:top-10 max-lg:top-14 -left-6 min-w-[230px] z-10 max-h-0 overflow-hidden group-hover:opacity-100 group-hover:max-h-[700px] px-6 group-hover:pb-4 group-hover:pt-2 group-active:opacity-100 group-active:max-h-[700px] group-hover:border group-active:pb-4 group-active:pt-2 transition-all duration-500 rounded-md ">
+                                        <li className="border-b dark:border-gray-600 last:border-0">
+                                            <Link
+                                                href={"/packages/live-stream"}
+                                                className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                Live Stream Packages
+                                            </Link>
+                                        </li>
+                                        <li className="border-b dark:border-gray-600 last:border-0">
+                                            <Link
+                                                href={"/packages/podcast"}
+                                                className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                PodCast Packages
+                                            </Link>
+                                        </li>
+                                        <li className="border-b dark:border-gray-600 last:border-0">
+                                            <Link
+                                                href={"/packages/content-creator"}
+                                                className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                Content Creator Packages
+                                            </Link>
+                                        </li>
+                                        <li className="border-b dark:border-gray-600 last:border-0">
+                                            <Link
+                                                href={"/packages/others"}
+                                                className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                Others Packages
+                                            </Link>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li className="max-lg:border-b max-lg:py-3 px-3">
                                     <Link

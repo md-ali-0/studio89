@@ -22,7 +22,7 @@ const Page = () => {
         { name: "Makeup Artist", price: "Contact us for a quote" },
     ];
     return (
-        <section className="relative z-10 overflow-hidden bg-white pb-5 pt-8 dark:bg-[#020817]">
+        <section className="relative z-10 overflow-hidden pb-5 pt-8">
             <div className="container mx-auto">
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4">

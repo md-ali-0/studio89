@@ -12,7 +12,7 @@ import Container from "./ui/container";
 const OfficeView = () => {
     return (
         <Container>
-            <div className="py-6 lg:m-5 lg:py-5">
+            <div className="py-6 m-5 lg:py-5">
                 <h2 className="text-4xl uppercase font-bold text-center my-6">
                     Office View
                 </h2>
@@ -21,7 +21,7 @@ const OfficeView = () => {
                         <Map></Map>
                     </div>
                     <div className="md:w-2/5 rounded-lg mt-5 lg:mt-0">
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="grid grid-cols-2 gap-2 lg:gap-8">
                             <Image
                                 src={photo1}
                                 className="md:w-72 rounded-md shadow-xl"

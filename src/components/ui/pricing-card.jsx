@@ -1,7 +1,9 @@
 import Link from "next/link";
+import { Button } from "./button";
 
 const PricingCard = ({
     children,
+    link,
     description,
     price,
     type,
@@ -28,15 +30,12 @@ const PricingCard = ({
                     <div className="mb-9 flex flex-col gap-[14px]">
                         {children}
                     </div>
-                    <Link
-                        href="/#"
-                        className={` ${
-                            active
-                                ? "block w-full rounded-md border border-blue-500 bg-blue-500 p-3 text-center text-base font-medium text-white transition hover:bg-opacity-90"
-                                : "block w-full rounded-md border border-stroke bg-transparent p-3 text-center text-base font-medium text-blue-500 transition hover:border-blue-500 hover:bg-blue-500 hover:text-white dark:border"
-                        } `}
-                    >
-                        {buttonText}
+                    <Link href={link ? link : "#"}>
+                        {active ? (
+                            <Button variant="primary" className="w-full">{buttonText}</Button>
+                        ) : (
+                            <Button className="w-full">{buttonText}</Button>
+                        )}
                     </Link>
                     <div>
                         <span className="absolute right-0 top-7 z-[-1]">
@@ -316,4 +315,4 @@ const PricingCard = ({
     );
 };
 
-export default PricingCard
+export default PricingCard;

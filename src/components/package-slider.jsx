@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
 import "keen-slider/keen-slider.min.css";
 import { useKeenSlider } from "keen-slider/react";
+import Container from "./ui/container";
 import PricingCard from "./ui/pricing-card";
 
 const List = ({ children }) => {
     return (
-        <p className="text-base text-slate-500 dark:text-dark-6">{children}</p>
+        <li className="text-base text-slate-500 dark:text-gray-300 doted">
+            {children}
+        </li>
     );
 };
 
@@ -33,12 +36,12 @@ const PackageSlider = () => {
     });
 
     return (
-        <section className="relative z-10 overflow-hidden bg-white pb-5 pt-8 dark:bg-[#020817]">
-            <div className="container mx-auto">
-                <div className="-mx-4 flex flex-wrap">
+        <section className="relative z-10 overflow-hidden pb-5 pt-8">
+            <Container>
+                <div className="flex flex-wrap">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] max-w-[510px] text-center">
-                            <h2 className="mb-3 text-3xl font-bold leading-[1.208] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+                            <h2 className="mb-3 text-3xl font-bold leading-[1.208] sm:text-4xl md:text-[40px]">
                                 Our Pricing Plan
                             </h2>
                             {/* <p className="text-base text-slate-500 dark:text-dark-6">
@@ -53,76 +56,83 @@ const PackageSlider = () => {
                 <div className="keen-slider" ref={sliderRef}>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Bronze"
-                            price="$256"
-                            subscription="year"
+                            type="Live Streaming"
+                            price="10,000/- BDT"
                             description="A hard alloy of copper and tin, often used in sculptures and tools."
-                            buttonText="Choose Bronze"
+                            buttonText="Choose Live Streaming"
+                            link="/packages/live-stream"
                         >
-                            <List>Unlimited User</List>
-                            <List>All UI components</List>
-                            <List>Lifetime access</List>
-                            <List>Free updates</List>
+                            <List>4 hours of studio time</List>
+                            <List>Two persons podcast season</List>
+                            <List>
+                                Access to high-quality video and audio recording
+                                equipment
+                            </List>
+                            <List>High-quality lighting setup</List>
+                            <List>On-site technical support</List>
                         </PricingCard>
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Silver"
-                            price="$59"
-                            subscription="year"
-                            description="A shiny white precious metal often used in jewelry and tableware."
-                            buttonText="Choose Silver"
+                            type="Content Creator"
+                            price="4,500/- BDT"
+                            description="A hard alloy of copper and tin, often used in sculptures and tools."
+                            buttonText="Choose Content Creator"
+                            link="/packages/content-creator"
                         >
-                            <List>1 User</List>
-                            <List>All UI components</List>
-                            <List>Lifetime access</List>
-                            <List>Free updates</List>
+                            <List>2 hours of studio time</List>
+                            <List>Two persons podcast season</List>
+                            <List>
+                                Access to high-quality video and audio recording
+                                equipment
+                            </List>
+                            <List>High-quality lighting setup</List>
+                            <List>On-site technical support</List>
                         </PricingCard>
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Gold"
-                            price="$199"
-                            subscription="year"
-                            description="A soft, yellow precious metal often used in jewelry, coins, and electronics."
-                            buttonText="Choose Gold"
+                            type="EdTech Package"
+                            price="2,500/- BDT"
+                            description="Tailored for educators and institutions."
+                            buttonText="Choose EdTech"
+                            link="/packages/others"
                         >
-                            <List>5 User</List>
-                            <List>All UI components</List>
-                            <List>Lifetime access</List>
-                            <List>Free updates</List>
+                            <List>2 hours of studio time</List>
+                            <List>
+                                Access to interactive whiteboards and
+                                presentation tools
+                            </List>
+                            <List>Professional audio and video equipment</List>
+                            <List>
+                                Technical support for live streaming or
+                                recording classes
+                            </List>
                         </PricingCard>
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Diamond"
-                            price="$256"
-                            subscription="year"
-                            description="The hardest naturally occurring substance known, often used as a gemstone."
-                            buttonText="Choose Diamond"
+                            type="Podcast Package"
+                            price="10,000/- BDT"
+                            description="For professionals requiring high-quality production facilities."
+                            buttonText="Choose Podcast"
+                            link="/packages/podcast"
                         >
-                            <List>Unlimited User</List>
-                            <List>All UI components</List>
-                            <List>Lifetime access</List>
-                            <List>Free updates</List>
-                        </PricingCard>
-                    </div>
-                    <div className="keen-slider__slide">
-                        <PricingCard
-                            type="Platinum"
-                            price="$256"
-                            subscription="year"
-                            description="A dense, white precious metal often used in jewelry and industrial applications."
-                            buttonText="Choose Platinum"
-                        >
-                            <List>Unlimited User</List>
-                            <List>All UI components</List>
-                            <List>Lifetime access</List>
-                            <List>Free updates</List>
+                            <List>3 hours of studio time</List>
+                            <List>Two persons podcast season</List>
+                            <List>
+                                Access to premium audio and video equipment
+                            </List>
+                            <List>
+                                Advanced lighting and green screen options
+                            </List>
+                            <List>On-site technical support</List>
+                            <List>Basic post-production assistance</List>
+                            <List>Access to editing suite</List>
                         </PricingCard>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     );
 };
