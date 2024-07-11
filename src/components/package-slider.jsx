@@ -72,10 +72,10 @@ const PackageSlider = () => {
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Content Creator"
+                            type="Package 1"
                             price="2,000/- BDT"
                             description="Ideal for regular content creators who need more flexibility"
-                            buttonText="Choose Content Creator"
+                            buttonText="Choose Package"
                         >
                             <List>1 hours of studio time</List>
                             <List>

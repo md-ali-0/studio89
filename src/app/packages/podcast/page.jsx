@@ -3,7 +3,9 @@ import PricingCard from "@/components/ui/pricing-card";
 
 const List = ({ children }) => {
     return (
-        <li className="text-base text-slate-500 dark:text-gray-300 doted">{children}</li>
+        <li className="text-base text-slate-500 dark:text-gray-300 doted">
+            {children}
+        </li>
     );
 };
 
@@ -42,7 +44,7 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>1 hours of studio time</List>
-                        <List>Two persons podcast season</List>
+                        <List>Two persons podcast session</List>
                         <List>
                             Access to high-quality video and audio recording
                             equipment
@@ -57,7 +59,7 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>2 hours of studio time</List>
-                        <List>Two persons podcast season</List>
+                        <List>Two persons podcast session</List>
                         <List>
                             Access to high-quality video and audio recording
                             equipment
@@ -72,12 +74,26 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>3 hours of studio time</List>
-                        <List>Two persons podcast season</List>
+                        <List>Two persons podcast session</List>
                         <List>Access to premium audio and video equipment</List>
                         <List>Advanced lighting and green screen options</List>
                         <List>On-site technical support</List>
                         <List>Basic post-production assistance</List>
                         <List>Access to editing suite</List>
+                    </PricingCard>
+                    <PricingCard
+                        type="Custom Package"
+                        price="Contact us for a quote"
+                        description="For professionals requiring high-quality production facilities."
+                        buttonText="Choose Custom Package"
+                    >
+                        <List>Flexible studio time based on your needs</List>
+                        <List>
+                            Access to all available equipment and facilities
+                        </List>
+                        <List>Personalized technical support</List>
+                        <List>Full post-production services</List>
+                        <List>{`Additional services upon request (e.g., makeup artist, set design)`}</List>
                     </PricingCard>
                 </div>
             </div>

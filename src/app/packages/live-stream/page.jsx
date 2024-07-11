@@ -3,7 +3,9 @@ import PricingCard from "@/components/ui/pricing-card";
 
 const List = ({ children }) => {
     return (
-        <li className="text-base text-slate-500 dark:text-gray-300 doted">{children}</li>
+        <li className="text-base text-slate-500 dark:text-gray-300 doted">
+            {children}
+        </li>
     );
 };
 
@@ -56,12 +58,11 @@ const page = () => {
                         buttonText="Choose Starter-2"
                     >
                         <List>2 hours of studio time</List>
-                        <List>Two persons podcast season</List>
                         <List>
                             Access to high-quality video and audio recording
                             equipment
                         </List>
-                        <List>High-quality lighting setup</List>
+                        <List>Professional lighting setup</List>
                         <List>On-site technical support</List>
                     </PricingCard>
                     <PricingCard
@@ -71,13 +72,28 @@ const page = () => {
                         buttonText="Choose Starter-3"
                     >
                         <List>4 hours of studio time</List>
-                        <List>Two persons podcast season</List>
                         <List>
-                            Access to high-quality video and audio recording
-                            equipment
+                            Access to high-quality audio and video equipment
                         </List>
-                        <List>High-quality lighting setup</List>
+                        <List>Professional lighting setup</List>
                         <List>On-site technical support</List>
+                    </PricingCard>
+                    <PricingCard
+                        type="Custom Package"
+                        price="Contact us for a quote"
+                        description="Customizable options to suit specific needs."
+                        buttonText="Choose Custom Package"
+                    >
+                        <List>Flexible studio time based on your needs</List>
+                        <List>
+                            Access to all available equipment and facilities
+                        </List>
+                        <List>Personalized technical support</List>
+                        <List>Full post-production services</List>
+                        <List>
+                            Additional services upon request (e.g., makeup
+                            artist, set design)
+                        </List>
                     </PricingCard>
                 </div>
             </div>
