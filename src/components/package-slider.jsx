@@ -60,6 +60,7 @@ const PackageSlider = () => {
                             price="2,500/- BDT"
                             description="Ideal for regular content creators who need more flexibility"
                             buttonText="Choose Live Stream"
+                            link={'/packages/live-stream'}
                         >
                             <List>1 hours of studio time</List>
                             <List>
@@ -72,10 +73,11 @@ const PackageSlider = () => {
                     </div>
                     <div className="keen-slider__slide">
                         <PricingCard
-                            type="Package 1"
+                            type="Content Creator"
                             price="2,000/- BDT"
                             description="Ideal for regular content creators who need more flexibility"
                             buttonText="Choose Package"
+                            link={'/packages/content-creator'}
                         >
                             <List>1 hours of studio time</List>
                             <List>
@@ -92,6 +94,7 @@ const PackageSlider = () => {
                             price="2,500/- BDT"
                             description="Perfect for beginners and small projects."
                             buttonText="Choose Podcast"
+                            link={'/packages/podcast'}
                         >
                             <List>1 hours of studio time</List>
                             <List>Two persons podcast season</List>
