@@ -44,6 +44,7 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>1 hours of studio time</List>
+                        <List>One camera will provide</List>
                         <List>Two persons podcast session</List>
                         <List>
                             Access to high-quality video and audio recording
@@ -59,6 +60,7 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>2 hours of studio time</List>
+                        <List>Two camera will provide</List>
                         <List>Two persons podcast session</List>
                         <List>
                             Access to high-quality video and audio recording
@@ -74,6 +76,7 @@ const page = () => {
                         buttonText="Choose Starter"
                     >
                         <List>3 hours of studio time</List>
+                        <List>Two/three cam will be provide</List>
                         <List>Two persons podcast session</List>
                         <List>Access to premium audio and video equipment</List>
                         <List>Advanced lighting and green screen options</List>

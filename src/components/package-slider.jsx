@@ -60,7 +60,7 @@ const PackageSlider = () => {
                             price="2,500/- BDT"
                             description="Ideal for regular content creators who need more flexibility"
                             buttonText="Choose Live Stream"
-                            link={'/packages/live-stream'}
+                            link={"/packages/live-stream"}
                         >
                             <List>1 hours of studio time</List>
                             <List>
@@ -76,8 +76,8 @@ const PackageSlider = () => {
                             type="Content Creator"
                             price="2,000/- BDT"
                             description="Ideal for regular content creators who need more flexibility"
-                            buttonText="Choose Package"
-                            link={'/packages/content-creator'}
+                            buttonText="Choose Content Creator"
+                            link={"/packages/content-creator"}
                         >
                             <List>1 hours of studio time</List>
                             <List>
@@ -94,10 +94,11 @@ const PackageSlider = () => {
                             price="2,500/- BDT"
                             description="Perfect for beginners and small projects."
                             buttonText="Choose Podcast"
-                            link={'/packages/podcast'}
+                            link={"/packages/podcast"}
                         >
                             <List>1 hours of studio time</List>
-                            <List>Two persons podcast season</List>
+                            <List>One camera will provide</List>
+                            <List>Two persons podcast session</List>
                             <List>
                                 Access to high-quality video and audio recording
                                 equipment
@@ -110,9 +111,8 @@ const PackageSlider = () => {
                         <PricingCard
                             type="EdTech Package"
                             price="2,500/- BDT"
-                            description="Tailored for educators and institutions."
+                            description="Perfect for beginners and small projects."
                             buttonText="Choose EdTech"
-                            link="/packages/others"
                         >
                             <List>2 hours of studio time</List>
                             <List>
@@ -124,6 +124,18 @@ const PackageSlider = () => {
                                 Technical support for live streaming or
                                 recording classes
                             </List>
+                        </PricingCard>
+                    </div>
+                    <div className="keen-slider__slide">
+                        <PricingCard
+                            type="Photography Package"
+                            price="3,000/- BDT"
+                            description="Tailored for educators and institutions."
+                            buttonText="Choose Photography"
+                        >
+                            <List>Max 5pcs products</List>
+                            <List>Edited file</List>
+                            <List>No model</List>
                         </PricingCard>
                     </div>
                 </div>

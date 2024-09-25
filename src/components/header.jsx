@@ -201,11 +201,20 @@ const Navbar = () => {
                                         </li>
                                         <li className="border-b dark:border-gray-600 last:border-0">
                                             <Link
-                                                href={"/packages/others"}
+                                                href={"/packages/ed-tech"}
                                                 className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
                                                 onClick={() => setIsOpen(false)}
                                             >
-                                                Others Packages
+                                                EdTech Packages
+                                            </Link>
+                                        </li>
+                                        <li className="border-b dark:border-gray-600 last:border-0">
+                                            <Link
+                                                href={"/packages/photography"}
+                                                className="hover:text-green text-gray-600 dark:text-gray-300 text-[15px] block"
+                                                onClick={() => setIsOpen(false)}
+                                            >
+                                                Product Photography Packages
                                             </Link>
                                         </li>
                                     </ul>
@@ -221,6 +230,16 @@ const Navbar = () => {
                                         onClick={() => setIsOpen(false)}
                                     >
                                         About
+                                    </Link>
+                                </li>
+                                <li className="max-lg:border-b max-lg:py-3 px-3">
+                                    <Link
+                                        href="http://studio89crm.liveblog365.com/?ng=login/"
+                                        target="_blank"
+                                        className='navlink'
+                                        onClick={() => setIsOpen(false)}
+                                    >
+                                        CRM
                                     </Link>
                                 </li>
                             </ul>

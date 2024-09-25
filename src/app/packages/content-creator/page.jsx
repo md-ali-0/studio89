@@ -53,8 +53,8 @@ const page = () => {
                     </PricingCard>
                     <PricingCard
                         type="Package 2"
-                        price="4,500/- BDT"
-                        description="A hard alloy of copper and tin, often used in sculptures and tools."
+                        price="4,000/- BDT"
+                        description="Ideal for regular content creators who need more flexibility"
                         buttonText="Choose Package"
                     >
                         <List>2 hours of studio time</List>
@@ -68,7 +68,7 @@ const page = () => {
                     <PricingCard
                         type="Custom Package"
                         price="Contact us for a quote"
-                        description="A hard alloy of copper and tin, often used in sculptures and tools."
+                        description="Ideal for regular content creators who need more flexibility"
                         buttonText="Choose Custom Package"
                     >
                         <List>Flexible studio time based on your needs</List>
