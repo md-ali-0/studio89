@@ -39,7 +39,7 @@ const page = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                     <PricingCard
                         type="EdTech Package"
-                        price="2,500/- BDT"
+                        price="1,500/- BDT"
                         description="Tailored for educators and institutions."
                         buttonText="Choose EdTech"
                     >

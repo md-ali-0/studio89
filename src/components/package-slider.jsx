@@ -110,7 +110,7 @@ const PackageSlider = () => {
                     <div className="keen-slider__slide">
                         <PricingCard
                             type="EdTech Package"
-                            price="2,500/- BDT"
+                            price="1,500/- BDT"
                             description="Perfect for beginners and small projects."
                             buttonText="Choose EdTech"
                         >
